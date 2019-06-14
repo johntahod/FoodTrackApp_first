@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTrackApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4WI-tA-q6p">
+                                <rect key="frame" x="10" y="64" width="404" height="96.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DZ-6H-al7">
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJX-d4-C85">
+                                        <rect key="frame" x="0.0" y="28.5" width="129" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N4G-04-aJp">
+                                        <rect key="frame" x="0.0" y="66.5" width="143" height="30"/>
+                                        <state key="normal" title="Set Default label text"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nyh-YS-6MM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="N4G-04-aJp" firstAttribute="top" secondItem="LJX-d4-C85" secondAttribute="bottom" constant="20" id="7Pf-CZ-ybi"/>
+                                    <constraint firstItem="LJX-d4-C85" firstAttribute="top" secondItem="2DZ-6H-al7" secondAttribute="bottom" constant="546" id="8kT-vL-Z1y"/>
+                                    <constraint firstItem="N4G-04-aJp" firstAttribute="top" secondItem="LJX-d4-C85" secondAttribute="bottom" constant="546" id="EQK-T0-uYf"/>
+                                    <constraint firstItem="LJX-d4-C85" firstAttribute="top" secondItem="2DZ-6H-al7" secondAttribute="bottom" constant="20" id="P00-po-566"/>
+                                    <constraint firstItem="2DZ-6H-al7" firstAttribute="top" secondItem="4WI-tA-q6p" secondAttribute="top" constant="20" id="Zkc-za-BxZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="N4G-04-aJp" secondAttribute="bottom" constant="546" id="mfR-LI-ouz"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4WI-tA-q6p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2PL-8b-eGF"/>
+                            <constraint firstItem="4WI-tA-q6p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="2ej-fE-rlr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4WI-tA-q6p" secondAttribute="trailing" id="8r1-Wc-1vS"/>
+                            <constraint firstItem="4WI-tA-q6p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9Iw-cw-2aO"/>
+                            <constraint firstAttribute="trailing" secondItem="4WI-tA-q6p" secondAttribute="trailing" id="VcU-wg-P36"/>
+                            <constraint firstItem="4WI-tA-q6p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="hRq-6i-AJv"/>
+                            <constraint firstItem="4WI-tA-q6p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="nrV-0u-eDg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mealNameLabe" destination="2DZ-6H-al7" id="ezJ-hj-N8l"/>
+                        <outlet property="nameTextField" destination="LJX-d4-C85" id="4N4-ey-lj1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
