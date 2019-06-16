@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FoodTrackApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4WI-tA-q6p">
-                                <rect key="frame" x="10" y="64" width="404" height="96.5"/>
+                                <rect key="frame" x="10" y="40" width="365" height="96.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2DZ-6H-al7">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -48,38 +48,6 @@
                                     <constraint firstItem="LJX-d4-C85" firstAttribute="top" secondItem="2DZ-6H-al7" secondAttribute="bottom" constant="20" id="P00-po-566"/>
                                     <constraint firstItem="2DZ-6H-al7" firstAttribute="top" secondItem="4WI-tA-q6p" secondAttribute="top" constant="20" id="Zkc-za-BxZ"/>
                                     <constraint firstAttribute="bottom" secondItem="N4G-04-aJp" secondAttribute="bottom" constant="546" id="mfR-LI-ouz"/>
-                                </constraints>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="dGZ-Tz-6h3">
-                                <rect key="frame" x="10" y="179" width="143" height="96.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8dQ-1B-Upx">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uVe-e0-a5x">
-                                        <rect key="frame" x="0.0" y="28.5" width="129" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZO-zM-ov9">
-                                        <rect key="frame" x="0.0" y="66.5" width="143" height="30"/>
-                                        <state key="normal" title="Set Default label text"/>
-                                        <connections>
-                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kiq-qK-2vu"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="uVe-e0-a5x" firstAttribute="top" secondItem="8dQ-1B-Upx" secondAttribute="bottom" constant="546" id="64K-BM-aRE"/>
-                                    <constraint firstItem="8dQ-1B-Upx" firstAttribute="top" secondItem="dGZ-Tz-6h3" secondAttribute="top" constant="20" id="7wV-hr-Fxd"/>
-                                    <constraint firstAttribute="bottom" secondItem="iZO-zM-ov9" secondAttribute="bottom" constant="546" id="RMx-wh-jWS"/>
-                                    <constraint firstItem="uVe-e0-a5x" firstAttribute="top" secondItem="8dQ-1B-Upx" secondAttribute="bottom" constant="20" id="fRR-VF-l9m"/>
-                                    <constraint firstItem="iZO-zM-ov9" firstAttribute="top" secondItem="uVe-e0-a5x" secondAttribute="bottom" constant="546" id="kh3-ga-kjg"/>
-                                    <constraint firstItem="iZO-zM-ov9" firstAttribute="top" secondItem="uVe-e0-a5x" secondAttribute="bottom" constant="20" id="vpv-6w-UNy"/>
                                 </constraints>
                             </stackView>
                         </subviews>
